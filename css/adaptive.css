@@ -1,0 +1,231 @@
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .header__container  {
+        padding: 18px 24px 18px 24px;
+    }
+
+    .header__left {
+        padding: 0;
+        gap: 42px;
+    }
+
+    .header__left::after {
+        right: 117px;
+    }
+
+    .header__right-hidden {
+        display: flex;
+        gap: 16px;
+        padding-right: 26px;
+        position: relative;
+    }
+
+    .header__right-hidden::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 1px;
+        background-color: #EAEAEA;
+    }
+
+    .main__heading {
+        padding-bottom: 32px;
+    }
+
+    .main__heading-style::before {
+        top: 50%;
+        transform: translateY(-60%);
+    }
+
+    .main__navigation {
+        padding-left: 24px;
+    }
+
+    .main__information {
+        flex-direction: row;
+        gap: 48px;
+        padding-top: 32px;
+    }
+
+    .main__information-text {
+        padding: 0;
+        padding-left: 24px;
+    }
+
+    .main__information-text__item {
+        line-height: 20px;
+        width: auto;
+    }
+
+    .main__information__button {
+        margin: 10px 16px 16px 32px;
+    }
+
+    .main__information-image {
+        padding-right: 25px;
+    }
+
+    .main__information-image img{
+        width: 360px;
+        height: 208px;
+        border-radius: 5px;
+    }
+
+    /* UNICAL CLASS #2*/
+
+    .hidden-firstspan {
+        display: block;
+    }
+}
+
+
+
+@media screen and (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+    .main__heading {
+        padding-top: 42px;
+        padding-left: 32px;
+        padding-bottom: 8px;
+        padding-right: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__heading-style::before {
+        width: 3px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-5%);
+        border-radius: 2px;
+    }
+
+    .main__heading__button-left,
+    .main__heading__button-right {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #FF3E79;
+        position: relative;
+    }
+
+    .header__right__button-img,
+    .main__heading__button-img {
+        vertical-align: middle;
+    }
+
+    .main__heading__button-left::before {
+        content: "Оставить заявку";
+        position: absolute;
+        width: 130px;
+        font-family: 'TT Lakes';
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .main__heading__button-right::before {
+        content: "Статус ремонта";
+        position: absolute;
+        font-family: 'TT Lakes';
+        width: 125px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .main__navigation {
+        padding-left: 32px;
+        padding-right: 25px;
+    }
+  
+    .main__nav__style {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__nav__list {
+        padding: 8px 18.35px 8px 17px;
+    }
+
+    .main__information {
+        padding-top: 16px;
+        gap: 36px;
+    }
+
+    .main__information-text {
+        padding-left: 34px;
+    }
+
+    .main__information-text__item {
+        line-height: 20px;
+        width: auto
+    }
+
+    .main__information-image {
+        padding-right: 29px;
+    }
+
+    .main__information-image img {
+        width: auto;
+        height: 310px;
+    }
+
+    .main__information__button {
+        background-color: #F8F8F8;
+    }
+    /* UNICAL CLASS */
+
+    .main__hidden__button {
+        display: flex;
+        gap: 160px;
+    }
+
+    .main__nav__list:nth-child(1),
+    .main__nav__list:nth-child(4) {
+        display: block;
+    }
+
+    .main__nav__list:nth-child(3) {
+        display: none;
+    }
+
+    .main__nav__list:nth-of-type(5) {
+        order: 1;
+    }
+
+    .main__nav__list:nth-of-type(4) {
+        order: 2;
+    }
+
+    .main__nav__list:nth-of-type(6) {
+        order: 3;
+    }
+
+    .main__nav__list:nth-of-type(7) {
+        order: 4;
+    }
+
+    .hidden-secondspan {
+        display: block;
+    }
+}
